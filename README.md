@@ -15,6 +15,52 @@ atcoder, codefoces, バーチャルコンテストなど競技プログラミン
 cargo install --git https://github.com/Namacha411/kyoprofolder
 ```
 
+## 使用例
+
+powershell
+
+```powershell
+kf abc226 Python @(1..8)
+```
+
+bash
+
+```bash
+kf abc226 Python {a..h}
+```
+
+コマンドを実行すると実行したディレクトリ下で以下のようなフォルダを生成します。
+それぞれのプログラムファイルの中身は[設定ファイル](#設定ファイル)で設定した
+`template`の値です。
+
+powershell
+
+```powershell
+ abc226
+  ├── 1.py
+  ├── 2.py
+  ├── 3.py
+  ├── 4.py
+  ├── 5.py
+  ├── 6.py
+  ├── 7.py
+  └── 8.py
+```
+
+bash
+
+```bash
+ abc226
+  ├── a.py
+  ├── b.py
+  ├── c.py
+  ├── d.py
+  ├── e.py
+  ├── f.py
+  ├── g.py
+  └── h.py
+```
+
 ## 使い方
 
 ```sh
@@ -74,18 +120,4 @@ extention = ""
 template = """
 
 """
-```
-
-## 使用例
-
-powershell
-
-```powershell
-kf abc226 Python @(1..8)
-```
-
-bash
-
-```bash
-kf abc226 Python {a..h}
 ```
