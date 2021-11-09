@@ -4,12 +4,12 @@
 
 設定ファイルを持っているため、他ユーザにおすすめのテンプレートを共有したり、PCを変えた際にそのままテンプレートを移行できるメリットがあります。
 
-atcoder, codefoces, バーチャルコンテストなど競技プログラミングに使用することを目的としています。
+atcoder, codefoces, バーチャルコンテストなど競技プログラミングで使用することを目的としています。
 
 ## インストール
 
 以下のコマンドでインストールできます。
-インストールにはcargoの環境が必要になります。
+インストールにはcargoが必要になります。
 
 ```sh
 cargo install --git https://github.com/Namacha411/kyoprofolder
@@ -78,8 +78,7 @@ ARGS:
 ```
 
 このコマンドを実行したディレクトリ下にfolder-nameに指定した名前のフォルダを作成し、
-そのフォルダ内にlangで指定した言語のテンプレートをあらかじめ書き込んだプログラムファイルを
-srcsに沿って作成します。
+そのフォルダ内にlangで指定した言語のテンプレートを設定ファイルから読み込みファイルを作成します。
 
 ## 設定ファイル
 
@@ -93,7 +92,7 @@ srcsに沿って作成します。
 | windows | C:\Users\Alice\AppData\Roaming\kyopro_folder.toml           |
 | max     | /Users/Alice/Library/Application Support/kyopro_folder.toml |
 
-また、内容は以下のようになっています。
+また、初期設定では内容は以下のようになっています。
 
 ```toml
 [[languages]]
@@ -109,9 +108,9 @@ if __name__ == "__main__":
 """
 ```
 
-このテーブルを書き足すことによって複数の言語のテンプレートを作ることができます。
+このテーブルを書き替えることによって複数の言語のテンプレートを作ることができます。
 
-また、`language`パラメータを`cpp-ac`、`cpp-cf`のように変えることによって１種類の言語でもatcoder用、codefoces用と複数作ることができます。
+また、`language`を`cpp-ac`、`cpp-cf`のように変えることによって１種類の言語でもatcoder用、codefoces用と複数作ることができます。
 
 ```toml
 [[languages]]
