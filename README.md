@@ -90,7 +90,7 @@ ARGS:
 | ------- | ----------------------------------------------------------- |
 | linux   | /home/alice/.config/kyopro_folder.toml                      |
 | windows | C:\Users\Alice\AppData\Roaming\kyopro_folder.toml           |
-| max     | /Users/Alice/Library/Application Support/kyopro_folder.toml |
+| mac     | /Users/Alice/Library/Application Support/kyopro_folder.toml |
 
 また、初期設定では内容は以下のようになっています。
 
